@@ -4,7 +4,7 @@ require './lib/list.rb'
 class BookmarkManager < Sinatra::Base
 
   get '/' do
-    @list = List.new.all
+    @list = List.all
     erb(:index)
   end
 
