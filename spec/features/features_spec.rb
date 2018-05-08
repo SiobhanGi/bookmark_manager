@@ -1,4 +1,5 @@
 RSpec.feature BookmarkManager do
+
   scenario 'intro to homepage' do
     visit '/'
     expect(page).to have_content 'Bookmark Manager Homepage'
