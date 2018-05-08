@@ -1,8 +1,11 @@
 require 'sinatra/base'
+require './lib/list.rb'
 
 class BookmarkManager < Sinatra::Base
+
   get '/' do
-    'hello world'
+    @list = List.new.all
+    erb(:index)
   end
 
   run! if app_file == $0

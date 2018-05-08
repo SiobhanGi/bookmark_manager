@@ -4,6 +4,7 @@ RSpec.feature BookmarkManager do
     visit '/'
     expect(page).to have_content 'Bookmark Manager Homepage'
   end
+
   scenario 'view list of bookmarks' do
     visit '/'
     expect(page).to have_content 'https://hackernoon.com'
