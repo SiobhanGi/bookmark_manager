@@ -7,7 +7,6 @@ RSpec.feature BookmarkManager do
 
   scenario 'view list of bookmarks' do
     visit '/'
-    save_and_open_page
     expect(page).to have_content 'http://hackernoon.com'
     expect(page).to have_content 'http://google.com'
     expect(page).to have_content 'https://9gag.com'
